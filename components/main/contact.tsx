@@ -61,7 +61,7 @@ export const Contact = () => {
         </div>
         <div className="relative z-10 flex flex-col items-center">
           <Image
-            src="/profile.PNG" // Add your profile picture to public folder
+            src="/profile.png" // Add your profile picture to public folder
             alt="Gedion Fikre"
             width={740}
             height={440}
@@ -127,4 +127,5 @@ export const Contact = () => {
       </motion.div>
     </section>
   );
+
 };
