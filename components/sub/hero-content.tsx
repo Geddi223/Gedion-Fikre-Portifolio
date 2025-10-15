@@ -41,7 +41,6 @@ export const HeroContent = () => {
               Fikre
             </span>
           </span>   
-            
         </motion.div>
         
         <motion.p
@@ -53,33 +52,37 @@ export const HeroContent = () => {
         </motion.p>
 
         <motion.div variants={slideInFromLeft(1)} className="flex flex-row items-center gap-4">
+          {/* Download CV */}
           <motion.a
             href="/Gedion Fikre cv.pdf"
             download
-            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] inline-flex items-center justify-center"
+            whileHover={{ scale: 1.07, y: -2 }}
+            whileTap={{ scale: 0.98 }}
+            className="group relative py-2 px-6 font-semibold rounded-lg shadow-md bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-white transition-all duration-200 outline-none ring-0 hover:from-purple-600 hover:to-cyan-400 hover:shadow-xl focus-visible:ring-2 focus-visible:ring-cyan-400 flex items-center overflow-hidden"
           >
             Download CV
-            <span className="ml-2">
+            <span className="ml-2 flex items-center">
               <Image
                 src="/download-icon.svg"
                 alt="download icon"
-                width={15}
-                height={15}
+                width={18}
+                height={18}
                 draggable={false}
-                className="inline-block"
+                className="inline-block group-hover:translate-y-1 transition-transform duration-200"
               />
             </span>
           </motion.a>
 
+          {/* Contact Me */}
           <motion.button
             type="button"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.10, y: -2 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => {
               const el = document.getElementById("contact");
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
-            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[700px] inline-flex items-center justify-center"
+            className="relative py-2 px-8 font-semibold rounded-lg bg-white text-purple-700 shadow-md transition-all duration-200 outline-none ring-0 hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-400 hover:text-white hover:shadow-xl focus-visible:ring-2 focus-visible:ring-purple-400 flex items-center"
           >
             Contact Me
           </motion.button>
