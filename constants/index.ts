@@ -116,7 +116,7 @@ export const FRONTEND_SKILL = [
   },
   {
     skill_name: "intellij",
-    image: "intellij.png",
+    image: "Intellij.png",
     width: 65,
     height: 65,
   },
@@ -179,7 +179,7 @@ export const BACKEND_SKILL = [
   },
   {
     skill_name: "Word",
-    image: "Word.png",
+    image: "word.png",
     width: 80,
     height: 80,
   },
